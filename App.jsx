@@ -1,7 +1,8 @@
 import Title from "./Title"; 
 import SubTitle from "./SubTitle"; 
 import { motion } from "framer-motion"; 
-import { Flower } from 'lucide-react';
+import { Flower, Phone} from 'lucide-react';
+import Button from "../React/button";
 
 
 const hidden = { opacity: 0, y: 20 }; 
@@ -44,7 +45,9 @@ function App() {
       <section className="min-h-screen container mx-auto flex flex-col gap-8 items-center text-center leading-3 mt-8">
      <div className="h-[400px] w-full bg-cover rounded-[900px]" style={{ backgroundImage: 'url("./weddingphoto.jpg")', backgroundSize: "cover" }} />
      <motion.h4 initial={hidden} animate={show} transition={{ duration: 1, delay: 1 }} className="gowun-batang-regular text-gray-400  font-semibold" > 
-     <Title className=" inline text-gray-500"> 최재만 · 이홍기</Title>의 딸 
+     <Title className=" inline text-gray-500"> 최재만 · 이홍기</Title>의 딸      <Title className=" inline text-gray-500"> 하나</Title><br />
+       <Title className=" inline text-gray-500"> 박재갑 · 이라임</Title>의 아들     <Title className=" inline text-gray-500"> 도현</Title>
+       <Button className="flex items-center gap-2 border border-gray-500 text-gray-500"> <Phone /> 연락하기</Button>
          </motion.h4> 
    </section> 
      </main>
